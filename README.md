@@ -2,3 +2,4 @@
 Capstone 1 Group 3 
 Miguel Angel
 Blake Prieto
+Sabrina Alvarado
