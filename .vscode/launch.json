@@ -2,9 +2,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "LoopLearning",
+            "name": "ProgrammingEasy",
             "request": "launch",
-            "mainClass": "LoopLearning"
+            "mainClass": "com.programmingeasy.demo.ProgrammingEasy",
+            "projectName": "demo"
         },
         {
             "name": "Java",
