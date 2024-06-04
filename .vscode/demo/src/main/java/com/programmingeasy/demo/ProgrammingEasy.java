@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class ProgrammingEasy {
     
+    
     @RequestMapping("/")
     String home() {
         return "This is the index page!";
