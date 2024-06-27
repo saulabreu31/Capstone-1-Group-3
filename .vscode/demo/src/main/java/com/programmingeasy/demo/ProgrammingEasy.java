@@ -7,17 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@Controller
 @SpringBootApplication
-
 
 public class ProgrammingEasy {
     
     
     @RequestMapping("/")
-    public String home() {
-        return "Variables";
-        //return "Variables.html";
+    String home() {
+        return "This is the index page!";
     }
 
     public static void main(String[] args) {
