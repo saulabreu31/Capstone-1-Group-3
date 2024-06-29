@@ -22,6 +22,8 @@ Let's look at some syntax of these if-statement blocks.
 </p>
 
 
+
+
 <!--The Syntax for If-statments-->
 <h3><ins>Syntax</ins></h3>
 <!--Create if block code part-->
@@ -36,45 +38,45 @@ Let's look at some syntax of these if-statement blocks.
 </ul>
 <!--Create Else if block code part-->
 <ul>
-    <li>
-        <ins><b>Else if-block</b></ins>
-        <br>
-        else-if () {
-                <br>
-        }
-    </li>
- </ul>
+   <li>
+       <ins><b>Else if-block</b></ins>
+       <br>
+       else-if () {
+               <br>
+       }
+   </li>
+</ul>
+<!-- Create Else- block code part-->
+<ul>
+   <li>
+       <ins><b>Else-block</b></ins>
+       <br>
+       else {
+           <br>
+       }
+   </li>
+</ul>
 
- <!-- Create Else- block code part-->
- <ul>
-    <li>
-        <ins><b>Else-block</b></ins>
-        <br>
-        else {
-            <br>
-        }
-    </li>
- </ul>
 
- <p>
-    Notice the '()' in the syntax; this is where our conditional/decision-making statements blocks. Remember that if the statement is
-    evaluated to be true it will run whatever is in that block e.g., '{}'. But if the statement is evaluated to be false, it will skip over
-    that block and continue on. Also notice the else-block doesn't include the conditional statement parenthesis. This is because
-    the else-block is the last resort call. Used as a precation if an if-block and/or else-if block fails to excete.
- </p>
- 
- 
- <h3><ins>Examples</ins></h3>
- <!--Create if-block Example-->
- <ul>
-    <li><ins><b>if-block</b></ins></li>
-    Int age = 20;
- <!---
-    <br>
-    &nbsp;&nbsp;&nbsp;if( age >= 20){
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(" You are either 20 years old or older. Congrats! ");
-     <br>
+<p>
+   Notice the '()' in the syntax; this is where our conditional/decision-making statements blocks. Remember that if the statement is
+   evaluated to be true it will run whatever is in that block e.g., '{}'. But if the statement is evaluated to be false, it will skip over
+   that block and continue on. Also notice the else-block doesn't include the conditional statement parenthesis. This is because
+   the else-block is the last resort call. Used as a precation if an if-block and/or else-if block fails to excete.
+</p>
+
+
+<h3><ins>Examples</ins></h3>
+<!--Create if-block Example-->
+<ul>
+   <li><ins><b>if-block</b></ins></li>
+   Int age = 20;
+<!---
+   <br>
+   &nbsp;&nbsp;&nbsp;if( age >= 20){
+       <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(" You are either 20 years old or older. Congrats! ");
+       <br>
    }
 -->
    <pre>
@@ -85,37 +87,50 @@ Let's look at some syntax of these if-statement blocks.
 </ul>
 <!--Create Else-if block-->
 <ul>
-    <li><ins><b>Else-if block</b></ins></li>
-    Int age = 20;
-    <pre>
-        if( age >= 20){
-                System.out.println(" You are either 20 years old or older. Congrats!");
-        }
-        <b>else-if</b>( age < 20){
-                System.out.println(" Sorry but you are younger than 20 years old.");
-        }
-    </pre>
- </ul>
+   <li><ins><b>Else-if block</b></ins></li>
+   Int age = 20;
+   <pre>
+       if( age >= 20){
+               System.out.println(" You are either 20 years old or older. Congrats!");
+       }
+       <b>else-if</b>( age < 20){
+               System.out.println(" Sorry but you are younger than 20 years old.");
+       }
+   </pre>
+</ul>
 <!--Create the else block-->
 <ul>
-    <li><ins><b>Else -block</b></ins></li>
-    Int age = 20;
-    <pre>
-        if(age >= 20){
-                System.out.println("You are either 20 years old or older. Congrats!");
-        }
-        else-if(age < 20){
-                System.out.println("Sorry but you are younger than 20 years old.");
-        }
-        <b>else</b>{
-                System.out.println("Sorry Invalid respond Try again?");
-        }
-    </pre>
- </ul>
- 
- 
+   <li><ins><b>Else -block</b></ins></li>
+   Int age = 20;
+   <pre>
+       if(age >= 20){
+               System.out.println("You are either 20 years old or older. Congrats!");
+       }
+       else-if(age < 20){
+               System.out.println("Sorry but you are younger than 20 years old.");
+       }
+       <b>else</b>{
+               System.out.println("Sorry Invalid respond Try again?");
+       }
+   </pre>
+</ul>
 
- <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
 <br>
 <h1>Switch Statement</h1>
 <hr>
@@ -130,6 +145,8 @@ Let's look at some syntax of these if-statement blocks.
    checking equality of a string and/or character. Switch statements do exceed well more often when dealing with these scenarios
    compared to if-statements. Let's look at some syntax examples.
 </p>
+
+
 
 
 <!--Syntax for Switch Statements-->
@@ -150,16 +167,17 @@ Let's look at some syntax of these if-statement blocks.
 
 
 <p>
-    Notice the "()" next to 'switch' this is where your vairable you are testing for equality is placed. Within the curly brackets
-    we have a case followed by quotations and semicolons and break. Within the quotations we place what we are testing our vairable too
-    followed by a semicolon. It is important to note that paired quotations (" ") are used for string data types while single quaotations
-    (' ') are used for the character data types. Break is used to indicate to your IDE that there is no need to look at other cases
-    if there is equality between the variable and vairable tested. Oftentimes there is a default section placed to catch errors that may
-    occur. For example if there is no equality found. This allows your program to handle that error gracefully intead of there being
-    a code trash. Lets loop at an example.
- </p>
- 
- <br>
+   Notice the "()" next to 'switch' this is where your vairable you are testing for equality is placed. Within the curly brackets
+   we have a case followed by quotations and semicolons and break. Within the quotations we place what we are testing our vairable too
+   followed by a semicolon. It is important to note that paired quotations (" ") are used for string data types while single quaotations
+   (' ') are used for the character data types. Break is used to indicate to your IDE that there is no need to look at other cases
+   if there is equality between the variable and vairable tested. Oftentimes there is a default section placed to catch errors that may
+   occur. For example if there is no equality found. This allows your program to handle that error gracefully intead of there being
+   a code trash. Lets loop at an example.
+</p>
+
+
+<br>
 <!--Examples fOR Switch Statements-->
 <h3><ins><b>Example</b></ins></h3>
 <ul>
@@ -186,11 +204,13 @@ String day = "Tuesday";
 
 
            default:
-           System.out.println("There is not day matching" + day + "sorry!" ");
-        }
+               System.out.println("There is not day matching" + day + "sorry!" ");
 
-    </pre>
+
+   }
+</pre>
 </ul>
+
 
 <h3><ins><b>Output</b></ins></h3>
 <ul>
@@ -203,18 +223,7 @@ String day = "Tuesday";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
 
-     
+
