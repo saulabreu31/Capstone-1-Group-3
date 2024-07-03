@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>
+            User Inputs In Java
+        </title>
+        <meta name = "description" content = "Basic understanding of user input and print statements for beginners">
+        <meta name = "Keywords" content = "Basic, User Input,Print statements, beginners">
+        <meta name = "author" content = "Sabrina Alvarado">
+        <meta name = "viewport" content = "width=decive-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content = "1000000">
+</head>
+<body>
+        <h1>User Input and Print Statements</h1>
+        <hr>
+        <p>
+            For user input, interactive applications often require user input for customization, personalization, and dynamic responses. 
+            In Java, the 'Scanner' class is commonly used for reading input from various sources. We can import the 'Scanner' class by 
+            using import java.util.Scanner; and you can create the 'Scanner' object with Scanner scanner = new Scanner(System.in);. 
+            Common methods for reading data are: 'nextLine()': Reads an entire line of text, 'nextInt()': Reads an integer, 'nextDouble()': Reads a double, 
+            'next()': Reads the next word, 'nextBoolean()': Reads a boolean value. To close up the scanner you would use scanner.close();.
+
+            Print statements are essential for debugging, displaying information to the user and logging. Java has several methods for printing
+            which include: 'print()', and 'printf()'. 'System.out.print()' prints text without a newline at the end, 'System.out.println()' prints
+            text with a newline at the end, and 'System.out.printf()' prints formatted text using format specifiers.
+        </p>
+
+        <br>
+        <h3><ins>Syntax and Usage</ins></h3>
+        <p><b>System.out.print()</b>: System.out.print(data)</p>
+        <ul>
+            <li>Example: System.out.print("Hello World!");</li>
+        </ul>
+
+        <p><b>System.out.println()</b>: System.out.println(data)</p>
+        <ul>
+            <li>Example: System.out.println("Hello World!");</li>
+        </ul>
+
+        <p><b>System.out.printf()</b>: System.out.printf(format, arguments)</p>
+        <ul>
+            <li>Format Specifiers: '%d' for integers, '%f' for floating-point numbers, '%s' for strings, '%c' for characters, and '%b' for booleans.</li>
+            <li>Example: System.out.printf("Hello, %s!", "World");</li>
+        </ul>
+
+        <h3><ins>In-depth examples of User Input</ins></h3>
+        <p><b>Reading a String</b></p>
+        <ul>
+            <li>Example:
+                <pre>
+            import java.util.Scanner;
+
+            public class ReadString {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Enter your favorite fruit: ");
+                    String fruit = scanner.nextLine();
+                    System.out.println("Youre favorite fruit is " + fruit);
+                    scanner.close(); 
+                    // Output: [Enter your favorite fruit: Apple
+                                Your favorite fruit is Apple]
+                }
+            }
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>Reading a Character</b></p>
+        <ul>
+            <li>Example:
+                <pre>
+            import java.util.Scanner;
+
+            public class ReadCharacter {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Enter a character: ");
+                    char character = scanner.next().charAt(0);
+                    System.out.println("You entered: " + character);
+                    scanner.close();
+                    // Output: [Enter a character: A 
+                                You entered: A]
+                }
+            }
+                </pre>
+            </li>
+        </ul>
+
+        <h3><ins>In-depth examples of Print Statements</ins></h3>
+        <p><b>Printing a String</b></p>
+        <ul>
+            <li>Example:
+                <pre>
+            public class PrintString {
+                public static void main(String[] args) {
+                    System.out.println("Hello, World!"); // Output: [Hello, World!]
+                }
+            }   
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>Printing an Integer</b></p>
+        <ul>
+            <li>Example:
+                <pre>
+            public class PrintInteger {
+                public static void main(String[] args) {
+                    int number = 42;
+                    System.out.println("The number is: " + number); // Output: [The number is: 42]
+                }
+            }
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>Using 'printf' for Formatted Output</b></p>
+        <ul>
+            <li>Example:
+                <pre>
+            public class PrintFormatted {
+                public static void main(String[] args) {
+                    String name = "Bob";
+                    int age = 25;
+                    double salary = 45000.50;
+                    System.out.printf("Name: %s, Age: %d, Salary: $%.2f\n", name, age, salary); // Output: [Name: Bob, Age: 25, Salary: $45000.50]
+                }
+            }
+                </pre>
+            </li>
+        </ul>
+        
+
+</body>
+
+</html>
