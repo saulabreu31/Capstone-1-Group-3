@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loop Learning</title>
+</head>
+<body>
+    <h1>Loop Learning</h1>
+    <h2>While Loop Explanation:</h2>
+    <p>A while loop controls flow in a statement that allows code to be executed repeatedly based on its condition. It is mostly used when you don't know beforehand how many times it needs to be repeated.</p>
+
+    <h3>Java Code:</h3>
+    <pre>
+<code>
+public class LoopLearning {
+
+    public static void main(String[] args) {
+        // Print explanation of the while loop
+        System.out.println("While Loop Explanation:");
+        System.out.println("A while loop controls flow in a statement that allows code to be executed repeatedly based on its condition. ");
+        System.out.println("It is mostly used when you don't know beforehand how many times it needs to be repeated.\n");
+
+        // Execute while loop and print result
+        int limit = 10; // Define the upper limit for the sum
+        System.out.println("The sum of numbers up to " + limit + " using a while loop is: " + sumNumbersUpTo(limit) + "\n");
+
+        // Print explanation of the for loop
+        System.out.println("For Loop Explanation:");
+        System.out.println("The for loop in Java lets you set up a repeating sequence in a simple way.");
+        System.out.println("It includes the start point, the end point, and the steps to get there all in one line.");
+        System.out.println("The loops are shorter which makes it easier to understand and fix if there are any errors in the code.\n");
+
+        // Execute for loop
+        forLoopExample();
+    }
+
+    public static int sumNumbersUpTo(int limit) {
+        int sum = 0; // Initialize sum to 0
+        int number = 1; // Start counting from 1
+
+        // Continue the loop as long as number is less than or equal to limit
+        while (number <= limit) {
+            sum += number; // Add number to sum
+            number++; // Increment number by 1
+        }
+        return sum; // Return the calculated sum
+    }
+
+    public static void forLoopExample() {
+        // Simple for loop to print "Hello World" 10 times
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Hello World");
+        }
+    }
+}
+</code>
+    </pre>
+
+    <h2>For Loop Explanation:</h2>
+    <p>The for loop in Java lets you set up a repeating sequence in a simple way. It includes the start point, the end point, and the steps to get there all in one line. The loops are shorter which makes it easier to understand and fix if there are any errors in the code.</p>
+
+    <h3>Java Code:</h3>
+    <pre>
+<code>
+public class LoopLearning {
+
+    public static void main(String[] args) {
+        // Print explanation of the while loop
+        System.out.println("While Loop Explanation:");
+        System.out.println("A while loop controls flow in a statement that allows code to be executed repeatedly based on its condition. ");
+        System.out.println("It is mostly used when you don't know beforehand how many times it needs to be repeated.\n");
+
+        // Execute while loop and print result
+        int limit = 10; // Define the upper limit for the sum
+        System.out.println("The sum of numbers up to " + limit + " using a while loop is: " + sumNumbersUpTo(limit) + "\n");
+
+        // Print explanation of the for loop
+        System.out.println("For Loop Explanation:");
+        System.out.println("The for loop in Java lets you set up a repeating sequence in a simple way.");
+        System.out.println("It includes the start point, the end point, and the steps to get there all in one line.");
+        System.out.println("The loops are shorter which makes it easier to understand and fix if there are any errors in the code.\n");
+
+        // Execute for loop
+        forLoopExample();
+    }
+
+    public static int sumNumbersUpTo(int limit) {
+        int sum = 0; // Initialize sum to 0
+        int number = 1; // Start counting from 1
+
+        // Continue the loop as long as number is less than or equal to limit
+        while (number <= limit) {
+            sum += number; // Add number to sum
+            number++; // Increment number by 1
+        }
+        return sum; // Return the calculated sum
+    }
+
+    public static void forLoopExample() {
+        // Simple for loop to print "Hello World" 10 times
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Hello World");
+        }
+    }
+}
+</code>
+    </pre>
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Learning</title>
+</head>
+<body>
+
+<head>
+    <title>Using Loops in Coding</title>
+</head>
+<body>
+    <h1>Summary of Ways to Use Loops in Coding</h1>
+    
+    <h2>1. While Loop</h2>
+    <p><strong>Description</strong>: Executes a block of code as long as a specified condition is true.</p>
+    <p><strong>Common Uses</strong>:</p>
+    <ul>
+        <li>When the number of iterations is not known beforehand.</li>
+        <li>Continuously checking for a condition to be met (waiting for user input).</li>
+    </ul>
+    <h3>Java Code:</h3>
+    <pre><code>
+int i = 0;
+while (i &lt; 5) {
+    System.out.println(i);
+    i++;
+}
+    </code></pre>
+
+    <h2>2. For Loop</h2>
+    <p><strong>Description</strong>: Executes a block of code a specific number of times.</p>
+    <p><strong>Common Uses</strong>:</p>
+    <ul>
+        <li>Iterating over arrays or collections.</li>
+        <li>Repeating actions a known number of times.</li>
+    </ul>
+    <h3>Java Code:</h3>
+    <pre><code>
+for (int i = 0; i &lt; 5; i++) {
+    System.out.println(i);
+}
+    </code></pre>
+
+    <h2>3. Do-While Loop</h2>
+    <p><strong>Description</strong>: Executes a block of code once, and then repeats the loop as long as the specified condition is true.</p>
+    <p><strong>Common Uses</strong>:</p>
+    <ul>
+        <li>When the code block needs to be executed at least once regardless of the condition.</li>
+    </ul>
+    <h3>Java Code:</h3>
+    <pre><code>
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} while (i &lt; 5);
+    </code></pre>
+
+    <h2>4. Enhanced For Loop (For-Each Loop)</h2>
+    <p><strong>Description</strong>: Simplifies iterating over collections or arrays.</p>
+    <p><strong>Common Uses</strong>:</p>
+    <ul>
+        <li>Traversing through elements in an array or a collection without using an index.</li>
+    </ul>
+    <h3>Java Code:</h3>
+    <pre><code>
+int[] numbers = {1, 2, 3, 4, 5};
+for (int number : numbers) {
+    System.out.println(number);
+}
+    </code></pre>
+
+    <h2>Key Points:</h2>
+    <ul>
+        <li><strong>While Loops</strong> are useful for indefinite repetition based on a condition.</li>
+        <li><strong>For Loops</strong> are ideal for definite repetition when you know how many times you need to repeat.</li>
+        <li><strong>Do-While Loops</strong> ensure the code block runs at least once before checking the condition.</li>
+        <li><strong>Enhanced For Loops</strong> provide a simpler syntax for iterating over arrays and collections.</li>
+    </ul>
+
+    <p>Understanding and using these loops effectively can help you write more efficient and readable code.</p>
+</body>
+
+
+    <h2>While Loop Output:</h2>
+    
+    <p id="while-loop-result"></p>
+
+    <h2>For Loop Output:</h2>
+    <div id="for-loop-output"></div>
+
+    <script>
+        // While loop explanation and execution
+        function sumNumbersUpTo(limit) {
+            let sum = 0; // Initialize sum to 0
+            let number = 1; // Start counting from 1
+
+            // Continue the loop as long as number is less than or equal to limit
+            while (number <= limit) {
+                sum += number; // Add number to sum
+                number++; // Increment number by 1
+            }
+            return sum; // Return the calculated sum
+        }
+
+        const limit = 10; // Define the upper limit for the sum
+        document.getElementById('while-loop-result').innerText = `The sum of numbers up to ${limit} using a while loop is: ${sumNumbersUpTo(limit)}`;
+
+        // For loop explanation and execution
+        function forLoopExample() {
+            let output = '';
+            // Simple for loop to print "Hello World" 10 times
+            for (let i = 1; i <= 10; i++) {
+                output += 'Hello World<br>';
+            }
+            return output;
+        }
+
+        document.getElementById('for-loop-output').innerHTML = forLoopExample();
+    </script>
+</body>
+</html>
