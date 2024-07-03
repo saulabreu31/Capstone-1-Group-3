@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+            Array Lists in Java 
+        </title>
+        <meta name = "description" content = "Basic understanding of array lists for beginners">
+        <meta name = "Keywords" content = "Basic, Array Lists, beginners">
+        <meta name = "author" content = "Sabrina Alvarado">
+        <meta name = "viewport" content = "width=decive-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content = "1000000">
+</head>
+<body>
+        <h1>Array Lists</h1>
+        <hr>
+        <p>
+            An array list is part of the Java Collections Framework and provides a resizable array
+            implementation. Array lists can grow and shrink in size dynamically and offer more flexibility.
+            Some features of array lists are dynamic sizing and indexed access. Dynamic sizing 
+            automatically adjusts its size when elements are added or removed and indexed acess is where
+            elements can be accessed through their index, similar to arrays. Before using an array list in 
+            Java, you would need to import it from the 'java.util' package: import java.utilArrayList; and 
+            then you are able to create an array list to hold specific types of objects: ArrayList<String>names = 
+            new ArrayList<>();.    
+        </p>
+
+        <br>
+        <h3>Common Methods of Array Lists</ins></h3>
+        <p><b>add(E e)</b>: Adds the specified element to the ends of the list.</p>
+        <ul>
+            <li>Example: 
+                <pre>
+            import java.util.ArrayList;
+
+                public class Example {
+                    public static void main(String[] args) {
+                        ArrayList<String> list = new ArrayList<>();
+                        list.add("Apple");
+                        list.add("Banana");
+                        System.out.println(list); // Output: [Apple, Banana]
+                    }
+                }
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>add(int index, E Element)</b>: Inserts the specified element at the specified position in the list.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            list.add(1, "Cherry");
+            System.out.println(list); // Output: [Apple, Cherry, Banana]
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>remove(int index)</b>: Removes the element at the specified position in the list.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            list.remove(1);
+            System.out.println(list); // Output: [Apple, Banana]
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>remove(Object o)</b>: Removes the first occurrence of the specified element from the list.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            list.remove("Banana");
+            System.out.println(list); // Output: [Apple]
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>get(int index)</b>: Returns the element at the specified position in the list.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            String element = list.get(0);
+            System.out.println(element); // Output: Apple
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>set(int index, E element)</b>: Replaces the element at the specified position in the list with the specified element.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            list.set(0, "Apricot");
+            System.out.println(list); // Output: [Apricot]
+                </pre>
+            </li>
+        </ul>
+        
+        <p><b>size()</b>: Returns the number of elements in the list.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            int size = list.size();
+            System.out.println(size); // Output: 1
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>contains(Object o)</b>: Returns 'true' if the list contains the specified element.</p>
+        <ul>
+            <li>Example: 
+                <pre>
+            boolean containsApple = list.contains("Apple");
+            System.out.println(containsApple); // Output: false 
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>clear()</b>: Removes all of he elements from the list.</p>
+        <ul>
+            <li>Example: 
+                <pre>
+            list.clear();
+            System.out.println(list);
+                </pre>
+            </li>
+        </ul>
+
+        <p><b>isEmpty()</b>: Returns 'true' if the list contains no elements.</p>
+        <ul>
+            <li>Example:
+                <pre>
+            boolean isEmpty = list.isEmpty();
+            System.out.println(isEmpty); // Output: true
+                </pre>
+            </li>
+        </ul>
+
+</body>
+</html>
