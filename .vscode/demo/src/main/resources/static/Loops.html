@@ -229,4 +229,38 @@ for (int number : numbers) {
         document.getElementById('for-loop-output').innerHTML = forLoopExample();
     </script>
 </body>
+
+<head>
+    <title>Loop Learning Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+        <h2>True or False Question:</h2>
+        <p>A while loop is used when you know exactly how many times you need to repeat the code block.</p>
+        <input type="radio" name="answer" value="true">
+        <label for="true">True</label><br>
+        <input type="radio" name="answer" value="false">
+        <label for="false">False</label><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const answer = form.answer.value;
+
+            if (answer === "false") {
+                result.innerText = "Correct! A while loop is used when the number of iterations is not known beforehand.";
+            } else {
+                result.innerText = "Incorrect. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
+
 </html>
