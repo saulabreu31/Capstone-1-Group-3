@@ -115,5 +115,49 @@
             </body>
             </html>
 
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IDE Quiz</title>
+            </head>
+            <body>
+                <h1>IDE Quiz</h1>
+                <form id="quiz-form">
+                    <h3>Question 1:</h3>
+                    <p>Cloud-based IDEs can be run without an internet connection.</p>
+                    <label>
+                        <input type="radio" name="answer3" value="true">
+                        True
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="answer3" value="false">
+                        False
+                    </label>
+                    <br>
+                    <button type="button" onclick="checkAnswer()">Submit</button>
+                </form>
+            
+                <p id="result"></p>
+            
+                <script>
+                    function checkAnswer() {
+                        const form = document.getElementById('quiz-form');
+                        const result = document.getElementById('result');
+                        const answer = form.answer3.value;
+            
+                        if (answer === "false") {
+                            result.innerText = "Correct! Cloud-based IDEs require an internet connection.";
+                            result.style.color = "green";
+                        } else {
+                            result.innerText = "Incorrect. Cloud-based IDEs cannot run without an internet connection.";
+                            result.style.color = "red";
+                        }
+                    }
+                </script>
+            </body>
+            </html>
+            
+
     </body>
     </html>
