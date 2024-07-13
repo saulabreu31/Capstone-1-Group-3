@@ -2,12 +2,45 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
 }
 
-h1, h2 {
-    color: #2c3e50;
+h1, h2, h3 {
+    color: #b8860b; /* Light purple color for headings */
 }
 
 p {
     margin: 10px 0;
+    color: #e0e0e0; /* Light text color */
+}
+
+a {
+    color: #0379da; /* Teal color for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #03dac6; /* Teal background color for button */
+    color: #121212; /* Dark text color for button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #018786; /* Darker teal color on hover */
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
