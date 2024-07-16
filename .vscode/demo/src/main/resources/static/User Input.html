@@ -132,6 +132,49 @@
         </ul>
         
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+    <title>User Input Quiz</title>
+</head>        
+<body>
+
+    <h2>Quiz Question</h2>
+    <p>What is the correct way to create a Scanner object to read input from the console?</p>
+
+    <form id="quizForm">
+        <input type="radio" id="option1" name="answer" value="1">
+        <label for="option1">Scanner scanner = new Scanner();</label><br>
+        <input type="radio" id="option2" name="answer" value="2">
+        <label for="option2">Scanner scanner = new Scanner(System.out);</label><br>
+        <input type="radio" id="option3" name="answer" value="3">
+        <label for="option3">Scanner scanner = new Scanner(System.in);</label><br>
+        <input type="radio" id="option4" name="answer" value="4">
+        <label for="option4">Scanner scanner = new Scanner(Console.in);</label><br><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+
+    <p id="feedback" class="hidden"></p>
+
+<script>
+    function checkAnswer() {
+        const form = document.getElementById('quizForm');
+        const feedback = document.getElementById('feedback');
+        const selected = form.answer.value;
+
+        if (selected === "3") {
+            feedback.textContent = "Correct! 'Scanner scanner = new Scanner(System.in);' is the right way to create a Scanner object to read input from the console.";
+            feedback.className = "correct";
+        }
+        else {
+            feedback.textContent = "Incorrect. The correct answer is 'Scanner scanner = new Scanner(System.in);'";
+            feedback.className = "incorrect";
+        }
+        feedback.classList.remove("hidden");
+    }
+</script> 
 </body>
 
+
+</body>
 </html>
