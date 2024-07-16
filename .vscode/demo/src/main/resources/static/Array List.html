@@ -9,35 +9,6 @@
         <meta name = "author" content = "Sabrina Alvarado">
         <meta name = "viewport" content = "width=decive-width, initial-scale=1.0">
         <meta http-equiv="refresh" content = "1000000">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 20px;
-            }
-            h1, h2 {
-                color: #2c3e50;
-            }
-            p {
-                margin: 10px 0;
-            }
-            ul {
-                margin: 10px 0;
-                padding-left: 20px;
-            }
-            pre {
-                background-color: #f4f4f4;
-                padding: 10px;
-                border-radius: 5px;
-                overflow-x: auto;
-            }
-            hr {
-                border: 0;
-                height: 1px;
-                background: #ccc;
-                margin: 20px 0;
-            }
-        </style>
 </head>
 <body>
         <h1>Array Lists</h1>
@@ -162,6 +133,50 @@
                 </pre>
             </li>
         </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+    <title>Array List Quiz</title>
+</head> 
+<body>
+
+    <h2>Quiz Question</h2>
+    <p>Which of the following statements correctly declares an ArrayList of Strings in Java?</p>
+
+    <form id="quizForm">
+        <input type="radio" id="option1" name="answer" value="1">
+        <label for="option1">ArrayList&lt;String&gt;list = new ArrayList&lt;&gt;();</label><br>
+        <input type="radio" id="option2" name="answer" value="2">
+        <label for="option2">ArrayList list = new ArrayList&lt;String&gt;();</label><br>
+        <input type="radio" id="option3" name="answer" value="3">
+        <label for="option3">ArrayList&lt;String&gt;list = new ArrayList&lt;String&gt;();</label><br>
+        <input type="radio" id="option4" name="answer" value="4">
+        <label for="option4">ArrayList list = new ArrayList();</label><br><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+
+    <p id="feedback" class="hidden"></p>
+
+<script>
+    function checkAnswer() {
+        const form = document.getElementById('quizForm');
+        const feedback = document.getElementById('feedback');
+        const selected = form.answer.value;
+    
+        if (selected === "3") {
+            feedback.textContent = "Correct! The statement 'ArrayList<String> list = new ArrayList<String>();' correctly declares an ArrayList of Strings in Java";
+            feedback.className = "correct";
+        }
+        else {
+            feedback.textContent = "Incorrect. The correct statement is 'ArrayList<String> list = new ArrayList<String>();";
+            feedback.className = "incorrect";
+        }
+        feedback.classList.remove("hidden");
+        }
+</script> 
+</body>
+
 
 </body>
 </html>
