@@ -1,0 +1,95 @@
+
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Styling for the header */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for horizontal rules */
+hr {
+    border: 0;
+    height: 1px;
+    background: #aaa;
+    margin: 20px 0;
+}
+
+/* Styling for paragraphs */
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #d4d4d4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for section headers */
+h3 {
+    margin-top: 30px;
+    color: #444;
+    font-size: 1.4em;
+}
+
+/* Styling for emphasized text */
+b {
+    color: #222;
+}
+
+/* Styling for underlined text */
+ins {
+    text-decoration: none;
+    border-bottom: 2px solid #444;
+}
+
+/* Additional styling for links if needed */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+pre {
+    background-color: #f4f4f4;
+    border-left: 5px solid #4CAF50;
+    padding: 10px;
+    margin: 10px 0;
+    overflow: auto;
+}
+
+hr {
+    border: 1px solid #4CAF50;
+    margin: 20px 0;
+}
+
+ins {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+b {
+    font-weight: bold;
+}
