@@ -40,5 +40,41 @@
     <code>
         arrayName[index] = value to write;
     </code>
+
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+        <h2>Given the following array:  int [] numbers  = {8,9,1,5,74,79,6,2,562,9} </h2>
+        <p>How could you change the value stored in the fifth location (74) for a 47. </p>
+        <input type="radio" name="answer" value="a">
+        <label for="a">A: numbers[74] = 47</label><br>
+        <input type="radio" name="answer" value="b">
+        <label for="b">B: numbers[4] = 47</label><br>
+        <input type="radio" name="answer" value="c">
+        <label for="c">C: numbers[5] = 47</label><br>
+        <input type="radio" name="answer" value="d">
+        <label for="d">D: numbers[location] = 47</label><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const answer = form.answer.value;
+
+            if (answer === "a") {
+                result.innerText = "Incorrect. Please try again.";
+            } else if(answer === "b") {
+                result.innerText = "Correct!";
+            }else if(answer === "c") {
+                result.innerText = "Incorrect. Please try again.";
+            }else if(answer === "d") {
+                result.innerText = "Incorrect. Please try again.";
+            }
+        }
+    </script>
 </body>
 </html>
+

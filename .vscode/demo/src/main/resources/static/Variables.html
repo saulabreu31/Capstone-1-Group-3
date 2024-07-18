@@ -26,3 +26,45 @@
     <p>
         A variable’s default value is 0 for numeric data types, and null for non-numeric data types. The value can be assigned and accessed at any point of the execution of the program. It is possible to reassign the value of a variable, however the value that was stored in that variable would be deleted and replaced with the new one.
     </p>
+	
+</body> 
+
+<body>
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+        <h2>Answer the Following question:</h2>
+        <p>Which of the following factors is necessary to take into account to create a variable:</p>
+        <input type="radio" name="answer" value="a">
+        <label for="a">A: The type of information that the variable is going to hold eg Decimal numbers, text</label><br>
+        <input type="radio" name="answer" value="b">
+        <label for="b">B: The length of the name of the variable</label><br>
+        <input type="radio" name="answer" value="c">
+        <label for="c">C: The amount of variables of the same type already existing in the program</label><br>
+        <input type="radio" name="answer" value="d">
+        <label for="d">D: The default value of the variable </label><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const answer = form.answer.value;
+
+            if (answer === "a") {
+                result.innerText = "Correct!";
+            } else if(answer === "b") {
+                result.innerText = "Incorrect. Please try again.";
+            }else if(answer === "c") {
+                result.innerText = "Incorrect. Please try again.";
+            }else if(answer === "d") {
+                result.innerText = "Incorrect. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
+
+</html>
