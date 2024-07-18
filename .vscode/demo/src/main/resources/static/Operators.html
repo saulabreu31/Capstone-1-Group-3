@@ -3,114 +3,126 @@
 
 
 <head>
-       <title>
-           Operators In Java
-       </title>
-       <meta name = "description" content = "Basic understanding of operators for beginners">
-       <meta name = "Keywords" content="Basic, Operators, beginners">
-       <meta name = "author" content="Rubens Nicolas">
-       <meta name = "viewport" content="width=decive-width, initial-scale=1.0">
-       <meta http-equiv="refresh" content="1000000">
+      <title>
+          Operators In Java
+      </title>
+      <link rel="stylesheet" href="Operatorstyle.css">
+      <meta name = "description" content = "Basic understanding of operators for beginners">
+      <meta name = "Keywords" content="Basic, Operators, beginners">
+      <meta name = "author" content="Rubens Nicolas">
+      <meta name = "viewport" content="width=decive-width, initial-scale=1.0">
+      <meta http-equiv="refresh" content="1000000">
 </head>
 <body>
-       <h1>Operators</h1>
-       <hr>
-       <p>
-           Operators are critical in programming and as a beginner programmer it is essential that you
-           have a full grasp of them. In this section we will be going through some of the basic/well-used
-           operators such as Unary, Arithmetic, Rational and Logical operators. Now there is no need to worry
-           that much as you will see some of these operator types are based on familiar mathematical concepts you
-           have learned. But it is vitally important you know these mathematical concepts are interpreted by your IDE
-           and what your output/result should look like before you compile. Let's begin, when dealing with multiple
-           operators remember order of operators does play a factor.
-       </p>
+      <h1>Operators</h1>
+      <hr>
+      <p>
+       Operators are critical in programming and as a beginner programmer it is essential that you
+       have a full grasp of them. In this section we will be going through some of the basic/well-used
+       operators such as Unary, Arithmetic, Rational and Logical operators. Now there is no need to worry
+       that much as you will see some of these operator types are based on familiar mathematical concepts you
+       have learned. But it is vitally important you know these mathematical concepts are interpreted by your IDE
+       and what your output/result should look like before you compile. Let's begin, when dealing with multiple
+       operators remember order of operators does play a factor.
+   </p>
 
 
-       <br>
-       <!--Unary operators-->
-       <h3><ins>Unary Operators</ins></h3>
-       <p><b>Increment symbolized as (++)</b>: increases the value by 1.</p>
-       <ul>
-           <li> a++(consider a = 10)------------> Result: a = 11;</li>
-       </ul>
-    
-       <p><b>Decrement symbolized as (--)</b>: decreases the value by 1</p>
-       <ul>
-        <li> a--(consider a = 10) -------------> Result: a = 9;</li>
-    </ul>
-    <br>
-
-
-
-
-    <!--Arithmetic oPERATORS-->
-    <h3><ins>Arithmetic Operators</ins></h3>
-    <p><b>Addition symbolizes as (+)</b>: Addition of two numbers.</p>
-    <ul>
-        <li>Int x = 10; Int y = 1; -----> Result: x + y = 11;</li>
-    </ul>
-    <p><b>Substraction symbolized as (-)</b>: Subtraction of two numbers.</p>
-    <ul>
-        <li>Int x = 10; Int y = 1; -----> Result: x - y = 9;</li>
-    </ul>
-    <p><b>Multiplication symbolized as (*)</b>: Multiplication of two numbers.</p>
-    <ul>
-        <li>Int x = 10; Int y = 2; -----> Result: x * y = 20;</li>
-    </ul>
-    <p><b>Division symbolized as (/)</b>: Divides two numbers.</p>
-    <ul>
-        <li>Int x = 12; Int y = 6; -----> Result: x / y = 2;</li>
-    </ul>
-    <p><b>Modulus symbolized as (%)</b>: Divides two numbers but only returns the remainder.</p>
-    <ul>
-        <li>Int x = 12; Int y = 6; -----> Result: x % y = 0; </li>
-    </ul>
-    <br>
-    <!--Rational Operators-->
-    <h3><ins>Rational Operators</ins></h3>
-    <p><b>Less than symbolized as (<)</b>: Operator checks if the left-side value is smaller than right side value.</p>
-    <ul>
-        <li>Int x = 40; Int y = 10; -----> Result: x < y = False</li>
-    </ul>
-    <p><b>Less than or Equal to symbolized as (<=)</b>: Operator checks if the left-side value is smaller than or equal to right-side value.</p>
-    <ul>
-        <li>Int x = 40; Int y = 30; -----> Result: x <= y = False</li>
-    </ul>
-    <p><b>Greather than symbolized as (>)</b>: Operator check if the left-side value is greather than right-side value.</p>
-    <ul>
-        <li>Int x = 40; Int y = 10; -----> Result: x > y = True</li>
-    </ul>
-    <p><b>Greather than or Eqaul to symbolized as (>=)</b>: Operator checks if the left-side value is greather than or eqaul to right-side value..</p>
-    <ul>
-        <li>Int x = 40; Int y = 3; -----> Result: x >= y = True</li>
-    </ul>
-    <p><b>Equal to symbolized as (==)</b>: Operator checks if the value on the left-side is eqaul to value on the right-side.</p>
-    <ul>
-        <li>Int x = 40; Int y = 30; -----> Result: x == y = False</li>
-    </ul>
-    <p><b>Not Eqaul symbolized as (!=)</b>: Operator check if the value on the left-side is <b>not</b> eqaul to value on the right-side.</p>
-    <ul>
-        <li>Int x = 40; Int y = 30; -----> Result: x != y = True</li>
-    </ul>
-    <br>
-    <!--Logical Operators-->
-    <h3><ins>Logical Operators</ins></h3>
-    <p><b>AND symbolized as (&&)</b>: Operator <b>checks both</b> expressions and returns True or False.</p>
-    <ul>
-        <li>Int a = 10; Int b = 20; -----> Result: (a = 10 && b = 20) True</li>
-    </ul>
-    <p><b>OR symbolized as (||)</b>: Operator check <b>at least one</b> expression and returns True or False.</p>
-    <ul>
-        <li>Int a = 10; Int b = 20; -----> Result: (a = 10 || b = 20) True</li>
-    </ul>
-    <p><b>NOT symbolized as (!)</b>: Operator <b>negates</b> expression, if expression is True it returns False and vice-versa.</p>
-    <ul>
-        <li>Int a = 10; Int b = 20; -----> Result: !(a = 10) True</li>
-    </ul>
-    <br>
+   <br>
+   <!--Unary operators-->
+   <h3><ins>Unary Operators</ins></h3>
+   <p><b>Increment symbolized as (++)</b>: increases the value by 1.</p>
+   <ul>
+       <li> a++(consider a = 10)------------> Result: a = 11;</li>
+   </ul>
+   <p><b>Decrement symbolized as (--)</b>: decreases the value by 1</p>
+   <ul>
+       <li> a--(consider a = 10) -------------> Result: a = 9;</li>
+   </ul>
+   <br>
 
 
 
-    
+
+
+
+
+
+   <!--Arithmetic oPERATORS-->
+   <h3><ins>Arithmetic Operators</ins></h3>
+   <p><b>Addition symbolizes as (+)</b>: Addition of two numbers.</p>
+   <ul>
+       <li>Int x = 10; Int y = 1; -----> Result: x + y = 11;</li>
+   </ul>
+   <p><b>Subtraction symbolized as (-)</b>: Subtraction of two numbers.</p>
+   <ul>
+       <li>Int x = 10; Int y = 1; -----> Result: x - y = 9;</li>
+   </ul>
+   <p><b>Multiplication symbolized as (*)</b>: Multiplication of two numbers.</p>
+   <ul>
+       <li>Int x = 10; Int y = 2; -----> Result: x * y = 20;</li>
+   </ul>
+   <p><b>Division symbolized as (/)</b>: Divides two numbers.</p>
+   <ul>
+       <li>Int x = 12; Int y = 6; -----> Result: x / y = 2;</li>
+   </ul>
+   <p><b>Modulus symbolized as (%)</b>: Divides two numbers but only returns the remainder.</p>
+
+
+   <ul>
+       <li>Int x = 12; Int y = 6; -----> Result: x % y = 0; </li>
+   </ul>
+   <br>
+   <!--Rational Operators-->
+   <h3><ins>Rational Operators</ins></h3>
+   <p><b>Less than symbolized as (<)</b>: Operator checks if the left-side value is smaller than right side value.</p>
+   <ul>
+       <li>Int x = 40; Int y = 10; -----> Result: x < y = False</li>
+   </ul>
+   <p><b>Less than or Equal to symbolized as (<=)</b>: Operator checks if the left-side value is smaller than or equal to right-side value.</p>
+   <ul>
+       <li>Int x = 40; Int y = 30; -----> Result: x <= y = False</li>
+   </ul>
+   <p><b>Greater than symbolized as (>)</b>: Operator checks if the left-side value is greater than right-side value.</p>
+   <ul>
+       <li>Int x = 40; Int y = 10; -----> Result: x > y = True</li>
+   </ul>
+   <p><b>Greater than or Equal to symbolized as (>=)</b>: Operator checks if the left-side value is greater than or equal to right-side value..</p>
+   <ul>
+       <li>Int x = 40; Int y = 3; -----> Result: x >= y = True</li>
+   </ul>
+   <p><b>Equal to symbolized as (==)</b>: Operator checks if the value on the left-side is equal to value on the right-side.</p>
+   <ul>
+       <li>Int x = 40; Int y = 30; -----> Result: x == y = False</li>
+   </ul>
+   <p><b>Not Equal symbolized as (!=)</b>: Operator check if the value on the left-side is <b>not</b> equal to value on the right-side.</p>
+   <ul>
+       <li>Int x = 40; Int y = 30; -----> Result: x != y = True</li>
+   </ul>
+   <br>
+      <!--Logical Operators-->
+      <h3><ins>Logical Operators</ins></h3>
+      <p><b>AND symbolized as (&&)</b>: Operator <b>checks both</b> expressions and returns True or False.</p>
+      <ul>
+          <li>Int a = 10; Int b = 20; -----> Result: (a = 10 && b = 20) True</li>
+      </ul>
+      <p><b>OR symbolized as (||)</b>: Operator checks < b > < b > < b > <b>at least one </b > expression and returns True or False.</p>
+      <ul>
+          <li>Int a = 10; Int b = 20; -----> Result: (a = 10 || b = 20) True</li>
+      </ul>
+      <p><b>NOT symbolized as (!)</b>: Operator < b > negates</b> expression, if expression is True it returns False and vice-versa.</p>
+      <ul>
+          <li>Int a = 10; Int b = 20; ----> Result: !(a = 10) True</li>
+      </ul>
+      <br>
+
+
+
+
+
+
+
+
 </body>
+
+
 </html>
