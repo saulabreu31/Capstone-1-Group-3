@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>IF-Statement and Switch Statements in Java</title>
+   <link rel="stylesheet" href="IfStatementstyle.css">
+   <meta name="description" content="Basic understanding of if-statements and switch statements for beginners">
+   <meta name="keywords" content="Basic, if-statements, switch statements, beginners">
+   <meta name="author" content="Rubens Nicolas">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="refresh" content="1000000">
+</head>
+<body>
+    <h1>If-Statements</h1>
+    <hr>
+    <p>
+        If-statements are blocks of code that perform conditional statements or, in better terms, decision-making statements
+        if the statement evaluates to true. There are three main types of if-statement blocks: the <b>"if"</b> block, <b>"else-if"</b> block, and
+        <b>"else"</b> block. With these blocks, programmers can implement code to handle errors made by users, different
+        decisions during the runtime of their code, and multiple actions within the program itself unbeknownst to the user.
+        Let's look at some syntax of these if-statement blocks.
+    </p>
+
+    <h3><ins>Syntax</ins></h3>
+    <!-- Create if-block code part -->
+    <ul>
+       <li>
+           <ins><b>If - block</b></ins>
+           <pre>
+if (condition) {
+    // code to be executed if condition is true
+}
+           </pre>
+       </li>
+    </ul>
+
+    <!-- Create else-if block code part -->
+    <ul>
+        <li>
+            <ins><b>Else if-block</b></ins>
+            <pre>
+else if (condition) {
+    // code to be executed if condition is true
+}
+            </pre>
+        </li>
+     </ul>
+
+     <!-- Create else-block code part -->
+     <ul>
+        <li>
+            <ins><b>Else - block</b></ins>
+            <pre>
+else {
+    // code to be executed if no condition is true
+}
+            </pre>
+        </li>
+     </ul>
+
+     <p>
+        Notice the '()' in the syntax; this is where our conditional/decision-making statements go. Remember that if the statement is
+        evaluated to be true, it will run whatever is in that block e.g., '{}'. But if the statement is evaluated to be false, it will skip over
+        that block and continue on. Also, notice the else-block doesn't include the conditional statement parenthesis. This is because
+        the else-block is the last resort call, used as a precaution if an if-block and/or else-if block fails to execute.
+     </p>
+     
+     <h3><ins>Examples</ins></h3>
+     <!-- Create if-block Example -->
+     <ul>
+        <li><ins><b>if-block</b></ins></li>
+        <pre>
+int age = 20;
+if (age >= 20) {
+    System.out.println("You are either 20 years old or older!");
+}
+        </pre>
+    </ul>
+
+    <!-- Create else-if block -->
+    <ul>
+    <li><ins><b>Else-if block</b></ins></li>
+    <pre>
+int age = 20;
+if (age >= 20) {
+    System.out.println("You are either 20 years old or older. Congrats!");
+} else if (age < 20) {
+    System.out.println("Sorry but you are younger than 20 years old.");
+}
+    </pre>
+    </ul>
+
+    <!-- Create the else block -->
+    <ul>
+        <li><ins><b>Else -block</b></ins></li>
+        <pre>
+int age = 20;
+if (age >= 20) {
+    System.out.println("You are either 20 years old or older. Congrats!");
+} else if (age < 20) {
+    System.out.println("Sorry but you are younger than 20 years old.");
+} else {
+    System.out.println("Sorry, invalid response. Try again?");
+}
+        </pre>
+    </ul>
+
+    <hr>
+    <br>
+    <h1>Switch Statement</h1>
+    <hr>
+    
+    <p>
+        Switch statements are statements that allow a variable to be tested for equality against a list of values. These
+        statements are used as an alternative to if-statements but can accomplish everything that an if-statement can. 
+        Then why are they relevant? Well, switch statements can be preferred over using if-statements when you're having to write
+        5 or more if-statements. In such cases, switch statements are more efficient and make your code more readable to other programmers.
+        Another preference is checking equality of a string and/or character. Switch statements often excel in these scenarios compared to if-statements. Let's look at some syntax examples.
+    </p>
+
+    <h3><ins><b>Syntax</b></ins></h3>
+    <ul>
+       <li>
+           <pre>
+switch (variable) {
+    case "value1":
+        // code to be executed if variable equals value1
+        break;
+    case "value2":
+        // code to be executed if variable equals value2
+        break;
+    default:
+        // code to be executed if variable doesn't match any case
+}
+           </pre>
+       </li>
+    </ul>
+
+    <p>
+        Notice the "()" next to 'switch' where your variable being tested for equality is placed. Within the curly brackets,
+        we have cases followed by values and break statements. It's important to note that paired quotations (" ") are used for string data types while single quotations (' ') are used for character data types. The break statement indicates to your IDE that there is no need to look at other cases
+        if there is equality between the variable and the case value. Often, a default section is included to handle scenarios where no match is found. This allows your program to handle errors gracefully instead of crashing. Let's look at an example.
+    </p>
+
+    <br>
+    <!-- Example for Switch Statements -->
+    <h3><ins><b>Example</b></ins></h3>
+    <ul>
+    <pre>
+String day = "Tuesday";
+switch (day) {
+    case "Monday":
+        System.out.println("Today is Monday!");
+        break;
+    case "Tuesday":
+        System.out.println("Today is Tuesday!");
+        break;
+    case "Wednesday":
+        System.out.println("Today is Wednesday!");
+        break;
+    case "Thursday":
+        System.out.println("Today is Thursday!");
+        break;
+    default:
+        System.out.println("No matching day found for " + day + ". Sorry!");
+}
+    </pre>
+    </ul>
+
+    <h3><ins><b>Output</b></ins></h3>
+    <ul>
+       <li>Today is Tuesday!</li>
+    </ul>
+</body>
+</html>
+
