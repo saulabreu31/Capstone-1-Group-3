@@ -1,73 +1,47 @@
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  background-color: #121212; /* Dark background color */
-  color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
 }
 
-.header {
-  background-color: #b87036;
-  color: #ffffff;
-  padding: 15px;
+h1, h2, h3 {
+    color: #b8860b; /* Light purple color for headings */
 }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+p {
+    margin: 10px 0;
+    color: #e0e0e0; /* Light text color */
 }
 
-.menu li {
-  padding: 8px;
-  margin-bottom: 40px;
-  background-color: #b8860b;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+a {
+    color: #0379da; /* Teal color for links */
 }
 
-.menu li:hover {
-  background-color: #b8860b;
+a:hover {
+    text-decoration: underline;
 }
 
-.menu a {
-  text-decoration: none;
-  color: inherit;
+button {
+    background-color: #03dac6; /* Teal background color for button */
+    color: #121212; /* Dark text color for button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
 }
 
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+button:hover {
+    background-color: #018786; /* Darker teal color on hover */
 }
 
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
