@@ -170,6 +170,107 @@ switch (day) {
     <ul>
        <li>Today is Tuesday!</li>
     </ul>
+
+
+
+    <hr>
+    <h2><ins>Quiz Questions</ins></h2>
+    <p>What will be the output for the following code snippet?</p>
+    <pre>
+        int x = 5;
+        if(x > 3) {
+            System.out.println("A");
+        }
+        if(x < 3) {
+            System.out.println("B");
+        }
+        if(x == 5) {
+            System.out.println("C");
+        }
+    </pre>
+
+    <form id="quizForm">
+        <input type="radio" id="option1" name="answer" value="1">
+        <label for="option1">A</label><br>
+        <input type="radio" id="option2" name="answer" value="2">
+        <label for="option2">C</label><br>
+        <input type="radio" id="option3" name="answer" value="3">
+        <label for="option3">AC</label><br>
+        <input type="radio" id="option4" name="answer" value="4">
+        <label for="option4">B</label><br><br>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+
+    <p id="feedback" class="hidden"></p>
+
+<script>
+    function checkAnswer() {
+        const form = document.getElementById('quizForm');
+        const feedback = document.getElementById('feedback');
+        const selected = form.answer.value;
+
+        if (selected === "3") {
+            feedback.textContent = "Correct! 5 is greather than 3 and also shows equality to the variable declaration. Great Job!";
+            feedback.className = "correct";
+        }
+        else {
+            feedback.textContent = "Incorrect. Remember if the condition evalutes to true then code within that if statement will be exceuted. ";
+            feedback.className = "incorrect";
+        }
+        feedback.classList.remove("hidden");
+    }
+</script>
+
+<br>
+<p>What will be the output for the following code snippet? </p>
+<pre>
+    int x = 2;
+    switch(x) {
+        case 1:
+            System.out.println("A");
+            break;
+        case 2:
+            System.out.println("B");
+            break;
+        case 3:
+            System.out.println("C");
+            break;
+        case 4:
+            System.out.println("D");
+    }
+</pre>
+<form id="quizForm2">
+    <input type="radio" id="option2_1" name="answer2" value="1">
+    <label for="option2_1">A</label><br>
+    <input type="radio" id="option2_2" name="answer2" value="2">
+    <label for="option2_2">C</label><br>
+    <input type="radio" id="option2_3" name="answer2" value="3">
+    <label for="option2_3">B</label><br>
+    <input type="radio" id="option2_4" name="answer2" value="4">
+    <label for="option2_4">D</label><br><br>
+    <button type="button" onclick="checkAnswer2()">Submit</button>
+</form>
+
+<p id="feedback2" class="hidden"></p>
+
+<script>
+    function checkAnswer2() {
+        const form = document.getElementById('quizForm2');
+        const feedback = document.getElementById('feedback2');
+        const selected = form.answer2.value;
+
+        if(selected == "3") {
+            feedback.textContent = "Correct! The value 2 matches case 2 printing 'B'. Great Job!";
+            feedback.className = "correct";
+        }
+        else {
+            feedback.textContent = "Incorrect. The value 2 matches case 2 and prints 'B'. Try again!"
+            feedback.className = "incorrect"
+        }
+        feedback.classList.remove("hidden");
+    }
+</script>
+
 </body>
 </html>
 
