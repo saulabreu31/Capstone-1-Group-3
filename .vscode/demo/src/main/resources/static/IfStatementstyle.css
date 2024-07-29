@@ -93,3 +93,20 @@ ins {
 b {
     font-weight: bold;
 }
+
+
+/*This is for quiz question*/
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
