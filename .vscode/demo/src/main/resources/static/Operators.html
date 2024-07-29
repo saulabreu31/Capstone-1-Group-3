@@ -115,9 +115,43 @@
       </ul>
       <br>
 
-
-
-
+      
+      <hr>
+      <h2><ins>Quiz Question</ins></h2>
+      <p>Which of the following operators checks for equality between two values in programming?</p>
+  
+      <form id="quizForm">
+          <input type="radio" id="option1" name="answer" value="1">
+          <label for="option1">=</label><br>
+          <input type="radio" id="option2" name="answer" value="2">
+          <label for="option2">==</label><br>
+          <input type="radio" id="option3" name="answer" value="3">
+          <label for="option3">!=</label><br>
+          <input type="radio" id="option4" name="answer" value="4">
+          <label for="option4"><=</label><br><br>
+          <button type="button" onclick="checkAnswer()">Submit</button>
+      </form>
+  
+      <p id="feedback" class="hidden"></p>
+  
+  <script>
+      function checkAnswer() {
+          const form = document.getElementById('quizForm');
+          const feedback = document.getElementById('feedback');
+          const selected = form.answer.value;
+  
+          if (selected === "2") {
+              feedback.textContent = "Correct! The == Operator checks for equailty on two values. Great Job! ";
+              feedback.className = "correct";
+          }
+          else {
+              feedback.textContent = "Incorrect. The correct answer is '=='. This Operator checks for equality between two values. ";
+              feedback.className = "incorrect";
+          }
+          feedback.classList.remove("hidden");
+      }
+  </script> 
+  
 
 
 
